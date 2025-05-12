@@ -1,19 +1,19 @@
 (deffacts smartphones
-  (smartphone (id sm001) (marca apple) (modelo iPhone 16) (precio 1099) (color negro) (stock 25))
-  (smartphone (id sm002) (marca samsung) (modelo Note 21) (precio 999) (color plata) (stock 40))
-  (smartphone (id sm003) (marca xiaomi) (modelo redmi note 13) (precio 299) (color azul) (stock 60))
+  (smartphone (id sm001) (marca apple) (modelo iPhone 16) (precio 10990) (color negro) (stock 25))
+  (smartphone (id sm002) (marca samsung) (modelo Note 21) (precio 9990) (color plata) (stock 40))
+  (smartphone (id sm003) (marca xiaomi) (modelo redmi note 13) (precio 2990) (color azul) (stock 60))
 )
 
 (deffacts computadoras
-  (computadora (id pc001) (marca dell) (modelo xps 13) (precio 1299.99) (color gris) (procesador intel core i7) (stock 15))
-  (computadora (id pc002) (marca apple) (modelo macbook air) (precio 899.99) (color plata) (procesador apple M3) (stock 20))
-  (computadora (id pc003) (marca lenovo) (modelo thinkpad e14) (precio 1099.99) (color negro) (procesador intel core i5) (stock 12))
+  (computadora (id pc001) (marca dell) (modelo xps 13) (precio 12990) (color gris) (procesador intel core i7) (stock 15))
+  (computadora (id pc002) (marca apple) (modelo macbook air) (precio 8990) (color plata) (procesador apple M3) (stock 20))
+  (computadora (id pc003) (marca lenovo) (modelo thinkpad e14) (precio 10990) (color negro) (procesador intel core i5) (stock 12))
 )
 
 (deffacts accesorios
-  (accesorio (id ac001) (nombre audifonos) (precio 49.99) (stock 100))
-  (accesorio (id ac002) (nombre cargador-usb-c) (precio 19.99) (stock 150))
-  (accesorio (id ac003) (nombre funda-protectora) (precio 24.99) (stock 200))
+  (accesorio (id ac001) (nombre audifonos) (precio 49) (stock 100))
+  (accesorio (id ac002) (nombre cargador-usb-c) (precio 19) (stock 150))
+  (accesorio (id ac003) (nombre funda-protectora) (precio 24) (stock 200))
 )
 
 (deffacts clientes
