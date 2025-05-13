@@ -14,17 +14,13 @@
 )
 
 (deffunction total-productos-orden (?line-items)
-    (bind ?total 0)
-    (foreach ?lid ?line-items
-        (do-for-fact ((?li line-item)) (eq ?li:id ?lid)
-            (bind ?pid ?li:product-id)
-            (bind ?cnt ?li:cantidad)
-            (do-for-fact ((?p ?pt)) (eq ?p:id ?pid)
-                (bind ?total (+ ?total (* ?cnt ?p:precio)))
-            )
-        )
+  (bind ?total 0)
+  (foreach ?li-id ?line-items
+    (do-for-fact ((?li line-item)) 
+                 (eq ?li:id ?li-id)
+      (bind ?cnt ?li:cantidad)
+      (bind ?total (+ ?total ?cnt))
     )
-    (return ?total)
+  )
+  (return ?total)
 )
-
-(deffunction mayorista-minorista)
